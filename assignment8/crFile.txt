@@ -1,0 +1,2 @@
+HI I AM GOING TO WRITE INTO A FILE USING SCANNER AND WRITE FUNCTION AND STORE INTO IT AFTER THAT I AM GOING TO READ IT .
+you have to close the reader and writer object you call otherwise you are not able to read it again .
