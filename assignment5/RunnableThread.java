@@ -1,4 +1,5 @@
 import static java.lang.System.out;
+import java.io.*;
 class ThreadA implements Runnable{
 	public void run(){
 		for (int i=1; i<= 5; i++){
@@ -20,7 +21,7 @@ class ThreadST implements Runnable {
 		for (int k = 1; k<= 6; k++){
 			out.println("Thread M with k = "+(2*k+2));
 		}
-		out.println("current Thread of ST is "+ CurrentThread());
+		out.println("current Thread of ST is "+ Thread.currentThread().getName());
 	}
 }
 class RunnableThread {
@@ -38,7 +39,9 @@ class RunnableThread {
 		Thread ts3 = Thread(new ThreadST());*/
 		
 		// invoking run method with created references thread class by start() 
-		ts1.start(); ts2.start(); ts3.start();
+		ts1.start(); 
+		ts2.start(); 
+		ts3.start();
 		out.println(".... Multithreading is over ");
 		
 	}

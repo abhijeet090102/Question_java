@@ -10,15 +10,15 @@ interface square{
 interface addition extends square{
 	static double am = 6;
 	static double st = 8;
-	public void show2(); 
+	public void show2();
 // interface does not support method defination 
 }
 // implements the interfaces 
 class math implements addition{
-	void show2(){
+	public void show2(){
 		System.out.println("The addition of two numbers "+(am+st));
 	}
-	void show(){
+	public void show(){
 		System.out.println("The square of two numbers are : "+ts+ " and "+ma);
 	}
 }

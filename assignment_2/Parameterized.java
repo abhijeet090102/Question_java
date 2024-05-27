@@ -10,9 +10,12 @@ class Parameterized{
 		Scanner am = new Scanner(System.in);
 		System.out.println("Enter the id of student ");
 		int i = am.nextInt();
+		int j = am.nextInt();
 		System.out.println("Enter the name of the student ");
 		String  st = am.next();
+		String ts = am.next();
 		para obj = new para(i,st);
+		para obj2 = new para(j,ts);
 	}
 	
 }
